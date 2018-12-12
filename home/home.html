@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content padding> 
+<ion-list>
+<form [formGroup]="credentialsForm">
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input  type="text" formGroupName="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" formGroupName="password"></ion-input>
+  </ion-item>
+  <button ion-button (click)='goToTrackerPage();'>Submit</button>
+</form>
+</ion-list>
+</ion-content>
+  
